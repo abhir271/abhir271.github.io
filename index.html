@@ -48,7 +48,7 @@
 
   /* Nav */
   nav { position: sticky; top: 0; z-index: 20; background: color-mix(in srgb, var(--bg) 78%, transparent); backdrop-filter: blur(14px); border-bottom: 1px solid var(--border); }
-  nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+  nav .wrap { display: flex; align-items: center; justify-content: flex-end; height: 64px; }
   .logo { font-family: "JetBrains Mono", monospace; font-weight: 700; font-size: 16px; }
   .logo span { color: var(--accent); }
   .links { display: flex; gap: 6px; align-items: center; font-size: 14px; color: var(--muted); }
@@ -252,7 +252,6 @@
 <!-- ================= NAV ================= -->
 <nav>
   <div class="wrap">
-    <a href="#top" class="logo">&lt;abhishek<span>/</span>&gt;</a>
     <div style="display:flex;gap:8px;align-items:center">
       <div class="links" id="links">
         <a href="#about">About</a>
@@ -351,7 +350,7 @@
     </div></div>
     <div class="job"><div class="job-card">
       <button class="job-head" aria-expanded="false">
-        <div><h3>Data Analyst &amp; Full Stack Developer Intern</h3><div class="org">Datasoothra</div><div class="when">Jun 2025 — Jul 2026 · Tempe, AZ</div></div>
+        <div><h3>Data Analyst</h3><div class="org">Datasoothra</div><div class="when">Jun 2025 — May 2026 · Tempe, AZ</div></div>
         <span class="tog">+</span>
       </button>
       <div class="job-body"><div><ul>
@@ -515,7 +514,7 @@
     },
     {
       id: "rideai", emoji: "🚗", color: "#6366f1", category: "DATA ENGINEERING · BACKEND",
-      title: "RideAI — Real-time Ride Hailing Platform",
+      title: "RideAI Real-time Ride Hailing Platform",
       intro: "A full ride-hailing platform built end to end, matching riders to drivers in real time with Redis and streaming events through Kafka.",
       overview: "A production-style ride-hailing system with a Java/Spring Boot backend and a Next.js frontend. Drivers stream live GPS locations, Redis GEO matches riders to nearby drivers in milliseconds, and Kafka moves ride and location events between services. It ships with CI/CD, integration tests and monitoring.",
       results: [["~4,900/s", "GPS updates sustained"], ["34 ms", "p95 latency"], ["0%", "Error rate"], ["100", "Simulated drivers"]],
